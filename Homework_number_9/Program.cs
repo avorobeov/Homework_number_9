@@ -10,24 +10,24 @@ namespace Homework_number_9
     {
         static void Main(string[] args)
         {
-            const string STOP_COMMAND = "Exit";
+            const string StopCommand = "Exit";
             bool isExit = false;
-            string imputText;
+            string inputText;
 
-            Console.WriteLine($"Для остановки ведите команду : {STOP_COMMAND}");
+            Console.WriteLine($"Для остановки ведите команду : {StopCommand}");
 
             while (isExit == false)
             {
                 Console.Write("Укажите текст: ");
-                imputText = Console.ReadLine();
+                inputText = Console.ReadLine();
 
-                if (imputText == STOP_COMMAND)
+                if (inputText == StopCommand)
                 {
                     isExit = true;
                 }
 
                 Console.Clear();
-                Console.WriteLine($"Вы вели: {imputText}");
+                Console.WriteLine($"Вы вели: {inputText}");
             }
         }
     }
